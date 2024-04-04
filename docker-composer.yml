@@ -1,0 +1,9 @@
+version: '1.0'
+services:
+  webservice:
+    container_name: "PHP-SERVER"
+    build: './build/php/'
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80

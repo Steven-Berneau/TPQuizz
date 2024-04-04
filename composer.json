@@ -1,0 +1,17 @@
+{
+    "name": "steven/tp-quizz",
+    "autoload": {
+        "psr-4": {
+            "app\\TPQuizz\\model\\": "src/model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Steven",
+            "email": "steven.berneau@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    }
+}
