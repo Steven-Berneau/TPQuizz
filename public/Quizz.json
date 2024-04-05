@@ -1,0 +1,41 @@
+{
+    "title":"Quizz PHP Basique",
+    "questions":[{
+        "text":"Que signifie PHP ?",
+        "responses":[
+            {"text":"Personal Home Page", "isValid":false},
+            {"text":"Hypertext Preprocessor", "isValid":true},
+            {"text":"Private Home Page", "isValid":false}
+                   ]
+                },
+    {
+        "text":"Quel fonction est utilisée pour insérer un élément à la fin d'un tableau en PHP ?",
+        "responses":[
+            {"text":"array_push()", "isValid":true},
+            {"text":"array_pop()","isValid":false},
+            {"text":"array_inser","isValid":false},
+            {"text":"array_unshift","isValid":false}
+        ]
+    },
+    
+    {
+        "text":"Comment déclarez-vous une variable en PHP ?",
+        "responses":[
+            {"text":"$variableName","isValid":true},
+            {"text":"var variableName","isValid":false},
+            {"text":"variableName","isValid":false},
+            {"text":"#variableName","isValid":false}
+        ]
+    },
+
+    {
+        "text":"Quel opérateur est utilisé pour concaténer deux chaînes de caractères en PHP ?",
+        "responses":[
+            {"text":".","isValid":true},
+            {"text":"+","isValid":false},
+            {"text":"&","isValid":false},
+            {"text":"||","isValid":false}
+        ]
+    }
+             ]
+}
