@@ -3,19 +3,19 @@
 namespace app\TPQuizz\model;
 
 class QuestionCollection implements \ArrayAccess, \countable{
-    private $_values =[];
-    private int $_position =0;
+    private $_values = [];
+    private int $_position = 0;
 
     public function __construct(){
         $this -> _values = [];
     }
 
     public function offsetExists($offset):bool{
-        return isset($this->_values[$offset]);
+        return isset($this -> _values[$offset]);
     }
 
     public function offsetGet($offset):Question{
-        return $this->_values[$offset];
+        return $this -> _values[$offset];
     }
 
     public function offsetSet($offset, $value):void{
@@ -23,31 +23,31 @@ class QuestionCollection implements \ArrayAccess, \countable{
             throw new \InvalidArgumentException("Must be a question");
         }
         if (empty($offset)){ //this happens when you do $collection[] = 1;
-            $this ->_values[] = $value;
+            $this -> _values[] = $value;
         }
         else {
-            $this-> $values[$offset] = $value;
+            $this -> $values[$offset] = $value;
         }
     }
 
     public function offsetUnset($offset):void{
-        unset($this->_values[$offset]);
+        unset($this -> _values[$offset]);
     }
 
     public function count():int{
-        return count($this->_values);
+        return count($this -> _values);
     }
 
     public function rewind():void{
-        $this->_position =0;
+        $this -> _position = 0;
     }
 
     public function key():int{
-        return $this-> _position;
+        return $this -> _position;
     }
 
     public function current():Question{
-        return $this->_values[$this->_position];
+        return $this -> _values[$this -> _position];
     }
 
     public function next():void{
@@ -55,7 +55,7 @@ class QuestionCollection implements \ArrayAccess, \countable{
     }
 
     public function valid():bool{
-        return isset($this->values[$this->_position]);
+        return isset($this -> values[$this -> _position]);
     }
 }
 

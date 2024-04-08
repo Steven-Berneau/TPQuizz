@@ -7,3 +7,14 @@ services:
       - .:/var/www/html
     ports:
       - 80:80
+    depends_on:
+      - mysql-srv  
+  mysql-srv:  
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: password 
+      MYSQL_DATABASE: quizz_database 
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
