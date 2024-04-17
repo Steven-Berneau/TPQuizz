@@ -2,7 +2,9 @@
     "name": "steven/tp-quizz",
     "autoload": {
         "psr-4": {
-            "app\\TPQuizz\\model\\": "src/model/"
+            "app\\TPQuizz\\model\\": "src/model/",
+            "app\\TPQuizz\\router\\": "src/router/",
+            "app\\TPQuizz\\controller\\": "src/controller/"
         }
     },
     "authors": [

@@ -1,0 +1,9 @@
+[
+    {
+        "path" : "/api",
+        "controller" : "Api",
+        "action" : "index",
+        "method" : "GET",
+        "params" : []
+    }   
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "title": "Quiz sur la culture générale",
+        "questions": [
+            {
+                "text": "Quelle est la capitale de la France ?",
+                "responses": [
+                    {"text": "Paris", "isValid": true},
+                    {"text": "Lyon", "isValid": false},
+                    {"text": "Marseille", "isValid": false}
+                ]
+            },
+            {
+                "text": "De quel pays Canberra est-elle la capitale ?",
+                "responses": [
+                    {"text": "L'Australie", "isValid": true},
+                    {"text": "La Nouvelle-Zélande", "isValid": false},
+                    {"text": "L'Indonésie", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quel élément chimique a pour symbole 'O' ?",
+                "responses": [
+                    {"text": "L'Or", "isValid": false},
+                    {"text": "L'Osmium", "isValid": false},
+                    {"text": "L'Oxygène", "isValid": true}
+                ]
+            },
+            {
+                "text": "Qui a écrit 'Les Misérables' ?",
+                "responses": [
+                    {"text": "Victor Hugo", "isValid": true},
+                    {"text": "Alexandre Dumas", "isValid": false},
+                    {"text": "Émile Zola", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quel est le plus long fleuve du monde ?",
+                "responses": [
+                    {"text": "Le Nil", "isValid": false},
+                    {"text": "L'Amazone", "isValid": true},
+                    {"text": "Le Yangtsé", "isValid": false}
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Quiz sur les sciences",
+        "questions": [
+            {
+                "text": "Quelle planète est connue comme la 'planète rouge' ?",
+                "responses": [
+                    {"text": "Mars", "isValid": true},
+                    {"text": "Jupiter", "isValid": false},
+                    {"text": "Vénus", "isValid": false}
+                ]
+            },
+            {
+                "text": "Combien de coeurs possède un poulpe ?",
+                "responses": [
+                    {"text": "2", "isValid": false},
+                    {"text": "3", "isValid": true},
+                    {"text": "1", "isValid": false}
+                ]
+            },
+            {
+                "text": "De quoi les diamants sont-ils principalement composés ?",
+                "responses": [
+                    {"text": "Du carbone", "isValid": true},
+                    {"text": "De l'oxygène", "isValid": false},
+                    {"text": "Du silicium", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quelle est la vitesse de la lumière ?",
+                "responses": [
+                    {"text": "300 000 km/s", "isValid": true},
+                    {"text": "150 000 km/s", "isValid": false},
+                    {"text": "450 000 km/s", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quel gaz est le plus abondant dans l'atmosphère terrestre ?",
+                "responses": [
+                    {"text": "L'oxygène", "isValid": false},
+                    {"text": "L'azote", "isValid": true},
+                    {"text": "Le dioxyde de carbone", "isValid": false}
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Quiz sur l'histoire",
+        "questions": [
+            {
+                "text": "Qui était le premier empereur romain ?",
+                "responses": [
+                    {"text": "Julius César", "isValid": false},
+                    {"text": "Auguste", "isValid": true},
+                    {"text": "Néron", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quelle est la période durant laquelle a eu lieu la Renaissance ?",
+                "responses": [
+                    {"text": "XIVe - XVIe siècle", "isValid": true},
+                    {"text": "XIIe - XIVe siècle", "isValid": false},
+                    {"text": "XVIIe - XIXe siècle", "isValid": false}
+                ]
+            },
+            {
+                "text": "Qui a découvert l'Amérique en 1492 ?",
+                "responses": [
+                    {"text": "Christophe Colomb", "isValid": true},
+                    {"text": "Vasco de Gama", "isValid": false},
+                    {"text": "Marco Polo", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quelle était la capitale de l'Empire ottoman ?",
+                "responses": [
+                    {"text": "Constantinople", "isValid": true},
+                    {"text": "Bagdad", "isValid": false},
+                    {"text": "Le Caire", "isValid": false}
+                ]
+            },
+            {
+                "text": "Quel pharaon a fait construire la majorité des pyramides de Gizeh ?",
+                "responses": [
+                    {"text": "Khéops", "isValid": true},
+                    {"text": "Ramsès II", "isValid": false},
+                    {"text": "Toutânkhamon", "isValid": false}
+                ]
+            }
+        ]
+    }
+]

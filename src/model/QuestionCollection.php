@@ -1,63 +1,26 @@
 <?php
 
+declare(strict_types=1);
+
 namespace app\TPQuizz\model;
 
-class QuestionCollection implements \ArrayAccess, \countable{
-    private $_values = [];
-    private int $_position = 0;
-
-    public function __construct(){
-        $this -> _values = [];
-    }
-
-    public function offsetExists($offset):bool{
-        return isset($this -> _values[$offset]);
-    }
-
-    public function offsetGet($offset):Question{
-        return $this -> _values[$offset];
-    }
-
-    public function offsetSet($offset, $value):void{
-        if (!($value instanceof Question)){
+class QuestionCollection extends \ArrayObject
+{
+    public function offsetSet($index, $newval): void
+    {
+        if (!($newval instanceof Question)) {
             throw new \InvalidArgumentException("Must be a question");
         }
-        if (empty($offset)){ //this happens when you do $collection[] = 1;
-            $this -> _values[] = $value;
+        parent::offsetSet($index, $newval);
+    }
+    public static function getQuestions(int $idQuiz): QuestionCollection
+    {
+        $liste = new QuestionCollection();
+        $statement = Database::getInstance()->getConnexion()->prepare('SELECT * FROM question where numQuiz=:numQuiz;');
+        $statement->execute(['numQuiz' => $idQuiz]);
+        while ($row = $statement->fetch()) {
+            $liste[] = new Question(text: $row['text'], id: $row['id']);
         }
-        else {
-            $this -> $values[$offset] = $value;
-        }
-    }
-
-    public function offsetUnset($offset):void{
-        unset($this -> _values[$offset]);
-    }
-
-    public function count():int{
-        return count($this -> _values);
-    }
-
-    public function rewind():void{
-        $this -> _position = 0;
-    }
-
-    public function key():int{
-        return $this -> _position;
-    }
-
-    public function current():Question{
-        return $this -> _values[$this -> _position];
-    }
-
-    public function next():void{
-        $this -> _position++;
-    }
-
-    public function valid():bool{
-        return isset($this -> values[$this -> _position]);
+        return $liste;
     }
 }
-
-
-   

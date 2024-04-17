@@ -1,0 +1,1 @@
+{"version":1,"defects":{"QuizzTest::test_1":8,"QuizzTest::test_2":8,"QuestionTest::test_1":7,"QuestionTest::test_2":8,"ResponseTest::test_1":8,"ResponseTest::test_2":8,"QuizzTest::test3":8},"times":{"QuizzTest::test_1":0,"QuizzTest::test_2":0,"QuestionTest::test_1":0.001,"QuestionTest::test_2":0,"ResponseTest::test_1":0,"ResponseTest::test_2":0,"QuizzTest::test3":0}}
